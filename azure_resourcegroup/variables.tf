@@ -4,4 +4,3 @@ variable "rgname" {
 variable "location" {
   type = string
 }
-
