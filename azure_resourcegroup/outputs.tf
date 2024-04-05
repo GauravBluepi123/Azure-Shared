@@ -1,3 +1,3 @@
-output "rg_name" {
+output "rgname" {
   value = azurerm_resource_group.this.name
 }
