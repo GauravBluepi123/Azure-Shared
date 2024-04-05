@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   check:
-    if: github.ref != 'refs/heads/main'
+    if: github.ref != 'refs/heads/dev'
     runs-on: ubuntu-latest
     steps:
       - uses: hashicorp/setup-terraform@v2
@@ -28,7 +28,7 @@ jobs:
       - name: Get changed files
         id: get_changed_files
         run: |
-          DIFF_TARGET=$([[ "${{ github.ref }}" = "refs/heads/main" ]] && echo "HEAD~1" || echo "origin/main")
+          DIFF_TARGET=$([[ "${{ github.ref }}" = "refs/heads/dev" ]] && echo "HEAD~1" || echo "origin/dev")
           CHANGED_FILES=$(git diff --name-only --diff-filter=ACMR ${DIFF_TARGET} | xargs)
           echo "$CHANGED_FILES"
           echo "files=$CHANGED_FILES" >> $GITHUB_OUTPUT
