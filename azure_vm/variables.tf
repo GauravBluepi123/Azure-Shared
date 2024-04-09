@@ -4,36 +4,33 @@ variable "rgname" {
 variable "location" {
   type = string
 }
-variable "virtual_network_name"{
+variable "virtual_network_name" {
   type = string
 }
-variable "ip-addrs_virtual_network"{
+variable "ip-addrs_virtual_network" {
   type = string
 }
-variable "subnet_name"{
+variable "subnet_name" {
   type = string
 }
-variable "virtual_network_name"{
+variable "subnet_ip_prefix" {
   type = string
 }
-variable "subnet_ip_prefix"{
+variable "public_ip_name" {
   type = string
 }
-variable "public_ip_name"{
-  type = string
-}
-variable "network_interface_name"{
+variable "network_interface_name" {
   type = "string"
 }
-variable "network_interface_ip_configuration"{
+variable "network_interface_ip_configuration" {
   type = "string"
 }
-variable "vm_name"{
+variable "vm_name" {
   type = "string"
 }
-variable "vm_size"{
+variable "vm_size" {
   type = "string"
 }
-variable "os_disk_name"{
+variable "os_disk_name" {
   type = "string"
 }
