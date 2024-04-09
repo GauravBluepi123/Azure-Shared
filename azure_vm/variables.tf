@@ -20,17 +20,17 @@ variable "public_ip_name" {
   type = string
 }
 variable "network_interface_name" {
-  type = "string"
+  type = string
 }
 variable "network_interface_ip_configuration" {
-  type = "string"
+  type = string
 }
 variable "vm_name" {
-  type = "string"
+  type = string
 }
 variable "vm_size" {
-  type = "string"
+  type = string
 }
 variable "os_disk_name" {
-  type = "string"
+  type = string
 }
