@@ -19,7 +19,7 @@ variable "network_interface_name" {
 variable "network_interface_ip_configuration" {
   type = string
 }
-variable "vm_name" {
+variable "vmname" {
   type = string
 }
 variable "vm_size" {

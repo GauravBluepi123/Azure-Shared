@@ -1,5 +1,5 @@
 resource "azurerm_virtual_machine" "this" {
-  name                  = var.vm_name
+  name                  = var.vmname
   location              = var.location
   resource_group_name   = var.rgname
   vm_size               = var.vm_size
@@ -12,7 +12,7 @@ resource "azurerm_virtual_machine" "this" {
   }
 
   os_profile {
-    computer_name  = var.vm_name
+    computer_name  = var.vmname
     admin_username = "azureuser"
     admin_password = "Password123!"
   }
