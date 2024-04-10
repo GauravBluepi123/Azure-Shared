@@ -5,6 +5,6 @@ resource "azurerm_monitor_action_group" "this" {
 
   email_receiver {
     name          = "email"
-    email_address = var.user_mail.id
+    email_address = var.user_mail_id
   }
 }
