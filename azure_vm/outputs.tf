@@ -1,3 +1,3 @@
-output "virtual_name" {
+output "azurerm_virtual_machine" {
   value = azurerm_virtual_machine.this.name
 }
