@@ -4,6 +4,6 @@ variable "rgname" {
 variable "location" {
   type = string
 }
-variable "sa_name_name" {
+variable "sa_name" {
   type = string
 }
